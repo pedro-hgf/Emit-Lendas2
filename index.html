@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMIT-LANDAS | Lendas e Folclore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
+       <!-- HEADER -->
+    <header class="header">
+        <div class="logo-container">
+            <a href="#folclore-brasileiro" class="site-title-link nav-link">
+                <!-- Placeholder for logo. Replace with your logo.png -->
+                <img src="img/folclore.webp" alt="Logo EMIT-LANDAS" class="site-logo">
+                <span class="site-name">EMIT-LANDAS</span>
+            </a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#folclore-brasileiro" class="nav-link active">Folclore Brasileiro</a></li>
+                <li><a href="#folclore-internacional" class="nav-link">Folclore Internacional</a></li>
+                <li><a href="#lendas-urbanas" class="nav-link">Lendas Urbanas</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-toggle" aria-label="Abrir menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+    </header>
+
+  
+
+        
+        <!-- PAGE 1: FOLCLORE BRASILEIRO -->
+        <div id="folclore-brasileiro" class="page active">
+            <h1 class="page-main-title">Criaturas do Folclore Brasileiro</h1>
+
+            <section class="banner-profissional">
+  <div class="banner-content">
+    <div class="banner-texto">
+      <h1>Folclore Brasileiro</h1>
+      <p>Lendas que atravessam gerações e encantam a nossa cultura. Descubra os mistérios do Saci, Iara, Curupira e muitos outros.</p>
+      <a href="javascript:void(0)" class="botao-explorar" onclick="mostrarLista()">Explorar Agora</a>
+
+      <!-- Lista de criaturas oculta -->
+      <ul id="lista-criaturas" class="lista-criaturas">
+        <li> Saci-Pererê</li>
+        <li>Curupira</li>
+        <li> Caipora</li>
+        <li> Iara</li>
+        <li> Boitatá</li>
+        <li> Boto-Cor-de-Rosa</li>
+        <li> Cuca</li>
+        <li> Lobisomem</li>
+        <li> Mula sem Cabeça</li>
+        <li>Cabra-Cabriola</li>
+         <li> Chupa Cabra</li>
+        <li>O Corpo Seco</li>
+         <li> Caboclo d'água</li>
+      </ul>
+    </div>
+
+    <div class="banner-imagem">
+      <img src="img/capa.jpg" alt="Personagens do folclore brasileiro" />
+    </div>
+  </div>
+</section>
+
+            <section class="creature-section" id="saci-perere">
+  <h2 class="creature-title">Saci-Pererê</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img src="img/sasi.jpg" alt="Ilustração do Saci-Pererê" class="creature-image" onclick="abrirImagemModal(this.src)">
+      <p class="image-caption">Ilustração do Saci-Pererê</p>
+    </div>
+    <div class="text-area">
+      <h3>O Guardião das Travessuras</h3>
+      <p>O Saci-Pererê é, sem dúvida, uma das figuras mais emblemáticas e queridas do folclore brasileiro. Trata-se de um pequeno negro, com apenas uma perna, que usa um gorro vermelho e um cachimbo. Ele é conhecido por suas travessuras, como esconder objetos, fazer tranças no rabo dos cavalos, azedar o leite e apagar o fogo. Apesar de suas diabruras, o Saci não é mau, apenas brincalhão e inquieto.</p>
+      <p>A lenda do Saci tem origem nas tribos indígenas e, com o tempo, incorporou elementos africanos, como o cachimbo e o gorro vermelho, que supostamente lhe confere seus poderes. Ele vive nas matas e pode ser capturado jogando uma peneira em um redemoinho de vento, momento em que se deve retirar seu gorro para dominá-lo. Seus poderes incluem a invisibilidade e a capacidade de se transportar para qualquer lugar.</p>
+      <p>O Saci é um protetor da floresta e um conhecedor profundo de suas ervas e segredos. Ele representa a liberdade, a astúcia e a inteligência. Sua imagem é frequentemente usada em campanhas de conscientização ambiental e como um símbolo da cultura brasileira. A popularidade do Saci foi impulsionada pelas obras de Monteiro Lobato, que o transformou em um personagem central do Sítio do Picapau Amarelo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal para imagem ampliada -->
+<div id="imagemModal" class="modal-imagem" onclick="fecharImagemModal()">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imagemModalSrc" alt="Imagem ampliada">
+</div>
+
+            
+            <section class="creature-section" id="curupira">
+                <h2 class="creature-title">Curupira</h2>
+                <div class="content-wrapper">
+                    <div class="image-area">
+                        <img src="img/curupira.jpg" alt="Ilustração do Curupira" class="creature-image" onclick="abrirImagemModal(this.src)">
+                        <p class="image-caption">Ilustração do Curupira</p>
+                    </div>
+                    <div class="text-area">
+                        <h3>O Protetor das Matas</h3>
+                        <p>O Curupira é uma das mais importantes figuras do folclore brasileiro, sendo considerado o protetor das florestas e dos animais. Ele é descrito como um ser pequeno, de cabelos vermelhos e com os pés virados para trás, o que o ajuda a enganar caçadores e exploradores, pois suas pegadas indicam a direção oposta à que ele realmente seguiu. Ele é muito ágil e forte, capaz de se movimentar com grande rapidez pela mata.
+
+Sua missão principal é punir aqueles que destroem a natureza, caçam indiscriminadamente ou desrespeitam o ambiente. O Curupira usa assobios, gritos e ilusões para desorientar e afastar os intrusos, fazendo-os se perder na floresta. Ele só permite a caça de subsistência e nunca tolera a caça esportiva ou a devastação da flora e fauna.
+
+A lenda do Curupira serve como um alerta ecológico, promovendo o respeito e a conservação do meio ambiente. Ele é a voz da natureza, lembrando a importância de se viver em harmonia com o ecossistema. Sua figura é um símbolo da resistência da floresta e um guardião que zela pela vida selvagem, sendo um personagem fundamental para a educação ambiental e a preservação das tradições indígenas..</p>
+                    </div>
+                </div>
+            </section>
+
+            <div id="imagemModal" class="modal-imagem" onclick="fecharImagemModal()">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imagemModalSrc" alt="Imagem ampliada">
+</div>
+
+            <section class="creature-section" id="Caipora">
+  <h2 class="creature-title">Caipora</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img src="img/Caipora - Zaraki Draw.jpg" alt="Caipora" class="creature-image" onclick="abrirImagemModal(this.src)">
+      <p class="image-caption">Ilustração do Caipora</p>
+    </div>
+    <div class="text-area">
+      <h3>Caipora, a Protetora Selvagem da Floresta</h3>
+      <p>A Caipora, também conhecida como Curupira em algumas variações regionais, é uma entidade do folclore brasileiro que protege os animais e as florestas. Ela é geralmente descrita como uma mulher pequena, de pele escura e cabelos longos, que cavalga um porco-do-mato ou uma queixada. Algumas versões a descrevem com os pés virados para trás, assim como o Curupira, para confundir os caçadores.</p>
+      <p>Sua principal função é afugentar caçadores que não respeitam as regras da floresta, utilizando assobios, gritos e sons que imitam animais para desorientá-los e fazê-los se perder. A Caipora é especialmente ativa em dias de caça e exige oferendas de fumo e cachaça para permitir que a caça seja bem-sucedida, desde que seja por necessidade e não por destruição.</p>
+      <p>A lenda da Caipora reforça a importância da preservação da fauna e da flora, sendo um símbolo da sabedoria indígena em relação à natureza. Ela representa a força e a astúcia do ambiente selvagem, lembrando aos humanos que são parte da natureza, e não seus donos.</p>
+    </div>
+  </div>
+
+  <!-- Modal para ampliar imagem -->
+<div id="imagemModal" class="modal-imagem" onclick="fecharImagemModal()">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imagemModalSrc" alt="Imagem ampliada">
+</div>
+</section>
+
+            
+            <section class="creature-section" id="iara">
+  <h2 class="creature-title">Iara (ou Mãe d’Água)</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img src="img/iara.jpg" alt="Ilustração da Iara (ou Mãe d’Água)" class="creature-image" onclick="abrirImagemModal(this.src)">
+      <p class="image-caption">Ilustração da Iara (ou Mãe d’Água)</p>
+    </div>
+    <div class="text-area">
+      <h3>Iara, a bela sereia das águas brasileiras</h3>
+      <p>A lenda da Iara, também conhecida como Mãe-d'água, é uma das mais famosas do folclore brasileiro, especialmente na região amazônica. Iara é uma linda sereia com cabelos longos e verdes, pele morena e olhos castanhos, que habita os rios da Amazônia. Ela é uma índia guerreira que, após ser invejada e morta pelos irmãos, foi jogada no rio e transformada em uma sereia pelos peixes, que tinham pena dela.</p>
+      <p>Com seu canto suave e irresistível, a Iara seduz os homens, principalmente pescadores e viajantes, atraindo-os para as profundezas dos rios, onde eles se tornam seus amantes. Uma vez sob o feitiço da Iara, é quase impossível que o homem retorne à superfície, sendo condenado a viver com ela no fundo d'água. Apenas um pajé ou um ritual xamânico muito forte pode libertá-lo.</p>
+      <p>A lenda da Iara serve como um alerta para os perigos dos rios e a força da natureza, mas também expressa a beleza e o mistério das águas amazônicas. A figura da Iara, com sua beleza estonteante e seu poder de encantar, é um dos mais belos e poéticos símbolos do folclore brasileiro, representando tanto a sedução quanto o perigo das profundezas.</p>
+    </div>
+  </div>
+  <!-- Modal de Imagem em Tela Cheia -->
+<div id="imagemModal" class="modal-imagem" onclick="fecharImagemModal()">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imagemModalSrc" alt="Imagem ampliada">
+</div>
+</section>
+
+
+           <section class="creature-section" id="boitata">
+  <h2 class="creature-title">Boitatá</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img src="img/boitata.jpg" alt="Boitatá" class="creature-image" onclick="abrirImagemModal(this.src)">
+      <p class="image-caption">Ilustração do Boitatá</p>
+    </div>
+    <div class="text-area">
+      <h3>Boitatá, a serpente de fogo protetora das matas</h3>
+      <p>A lenda do Boitatá, originária do tupi-guarani ("boî" = cobra + "tá" = fogo), é uma das mais antigas e fascinantes do folclore brasileiro. Ele é descrito como uma enorme serpente de fogo que rasteja pelas matas e campos, especialmente em noites escuras e durante as cheias dos rios. Sua principal função é proteger as florestas dos incêndios, atacando e cegando aqueles que tentam provocar queimadas ou desmatar a natureza.</p>
+      <p>O Boitatá possui olhos que brilham intensamente e um corpo que se assemelha a um tronco em chamas. Algumas versões da lenda contam que ele é o espírito de uma cobra gigante que, em tempos de dilúvio, se alimentou dos olhos de animais afogados, adquirindo assim a capacidade de se transformar em fogo e brilhar na escuridão. Ele pode assumir diferentes formas e é invisível para quem não tem a consciência pura.</p>
+      <p>A lenda do Boitatá é um poderoso símbolo de proteção ambiental e um alerta contra a destruição da natureza. Ele personifica a fúria da floresta contra a ação humana predatória. A figura da serpente de fogo é um dos mais impressionantes elementos do folclore brasileiro, transmitindo uma mensagem de respeito e reverência à natureza, sendo um guardião místico das nossas riquezas naturais e um símbolo da resistência do meio ambiente.</p>
+    </div>
+  </div>
+  <!-- Modal de Imagem em Tela Cheia -->
+<div id="imagemModal" class="modal-imagem" onclick="fecharImagemModal()">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imagemModalSrc" alt="Imagem ampliada">
+</div>
+</section>
+
+            
+            <section class="creature-section" id="boto-cor-de-rosa">
+  <h2 class="creature-title">Boto-Cor-de-Rosa</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img src="img/Boto cor-de-rosa - Personagem do folclore brasileiro - Lenda, curiosidades.jpg" 
+           alt="Ilustração do Boto-Cor-de-Rosa" 
+           class="creature-image"
+           onclick="abrirImagemModal(this.src)">
+      <p class="image-caption">Ilustração do Boto-Cor-de-Rosa</p>
+    </div>
+    <div class="text-area">
+      <h3>O Boto, a lenda amazônica do sedutor</h3>
+      <p>A lenda do Boto é uma das mais encantadoras e conhecidas do folclore amazônico. Segundo a crença popular, nas noites de festas juninas e em outros eventos sociais, o boto-cor-de-rosa se transforma em um belo jovem vestido de branco, com um chapéu para esconder o orifício respiratório (espiráculo) que ele mantém na cabeça. Ele surge das águas para seduzir moças bonitas e, após engravidá-las, retorna ao rio na forma de boto antes do amanhecer.</p>
+      <p>O Boto é descrito como um homem charmoso, elegante e bom dançarino, que conquista o coração das mulheres com seu jeito galanteador. A lenda é frequentemente usada para explicar gravidezes de pais desconhecidos, sendo que o filho resultante da união com o Boto possui inteligência fora do comum. Essa narrativa ajuda a preservar a honra da mulher na comunidade, atribuindo a paternidade a uma entidade mística.</p>
+      <p>Além de seu papel como sedutor, o Boto é visto por algumas comunidades como um protetor dos rios e seus habitantes, embora a versão mais difundida seja a de seu lado humano e galanteador. A figura do Boto, com sua dualidade entre o mundo aquático e terrestre, é um dos ícones mais marcantes da cultura e das tradições ribeirinhas da Amazônia, misturando fantasia e a realidade da vida à beira dos rios.</p>
+    </div>
+  </div>
+  <!-- Modal de Imagem em Tela Cheia -->
+<div id="imagemModal" class="modal-imagem" onclick="fecharImagemModal()">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imagemModalSrc" alt="Imagem ampliada">
+</div>
+</section>
+
+
+            <section class="creature-section" id="cuca">
+  <h2 class="creature-title">Cuca</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img src="img/Cuca.jpg" alt="Cuca" class="creature-image" onclick="abrirImagemModal(this.src)">
+      <p class="image-caption">Ilustração da Cuca</p>
+    </div>
+    <div class="text-area">
+      <h3>A temível Cuca do folclore brasileiro</h3>
+      <p>A Cuca é um dos seres mais temidos do folclore brasileiro, uma figura mítica que habita o imaginário infantil. Conhecida como uma velha bruxa com cabeça de jacaré e corpo humano, ela é frequentemente associada ao ato de raptar crianças desobedientes. Sua origem remonta a lendas europeias, como a Coca portuguesa, que se adaptou e ganhou características próprias no Brasil.</p>
+      <p>A lenda da Cuca é amplamente difundida através de cantigas de ninar, como "Nana neném que a Cuca vem pegar, papai foi pra roça, mamãe foi trabalhar". Ela é descrita como alguém que nunca dorme, e seu sono de sete anos só acontece a cada sete mil anos. Essa característica a torna uma vigilante constante, sempre à espreita, o que a solidifica como um poderoso elemento de controle parental.</p>
+      <p>No famoso universo de Monteiro Lobato, a Cuca ganhou ainda mais notoriedade, sendo retratada como uma vilã astuta e poderosa no Sítio do Picapau Amarelo. Sua imagem foi popularizada com chifres, garras afiadas e uma cauda comprida, tornando-a visualmente impactante. A Cuca é um símbolo do medo infantil, mas também uma parte inseparável da riqueza cultural do folclore brasileiro.</p>
+    </div>
+  </div>
+  <!-- Modal de Imagem em Tela Cheia -->
+<div id="imagemModal" class="modal-imagem" onclick="fecharImagemModal()">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imagemModalSrc" alt="Imagem ampliada">
+</div>
+</section>
+
+            
+           <section class="creature-section" id="Lobisomem">
+  <h2 class="creature-title">Lobisomem</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img src="img/lobao.jpg" alt="Lobisomem" class="creature-image" onclick="abrirImagemModal(this.src)">
+      <p class="image-caption">Ilustração do Lobisomem</p>
+    </div>
+    <div class="text-area">
+      <h3>Lobisomem, o monstro das noites de lua cheia</h3>
+      <p>A lenda do Lobisomem, embora presente em diversas culturas, ganhou contornos próprios no folclore brasileiro. De acordo com a tradição, o sétimo filho homem de uma sequência de sete filhos, ou o primeiro filho homem de uma mulher que teve seis filhas, pode se transformar em lobisomem nas noites de lua cheia, especialmente nas sextas-feiras.</p>
+      <p>A transformação acontece após a meia-noite, e o ser vaga por estradas e cemitérios, atacando pessoas e animais. A criatura é descrita como uma mistura de homem e lobo, com características lupinas marcantes, como pelos espessos, garras afiadas e uma força sobrenatural.</p>
+      <p>O Lobisomem tem uma fome insaciável e ataca principalmente animais de fazenda, mas também pode ferir ou matar humanos. A maldição só pode ser quebrada se o Lobisomem for ferido com algo de ferro ou prata, ou se alguém que o ame o reconhecer durante a transformação.</p>
+      <p>A lenda do Lobisomem reflete os medos ancestrais do homem em relação ao desconhecido e à natureza selvagem. No Brasil, a história se enraizou em diversas regiões, especialmente no interior, onde os contos são passados de geração em geração.</p>
+      <p>Ele representa o lado sombrio da natureza humana e a dualidade entre o bem e o mal, sendo um dos mais populares e arrepiantes seres do folclore mundial, com sua versão brasileira mantendo o terror e o mistério.</p>
+    </div>
+  </div>
+  <div id="imagemModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+  <span 
+    onclick="fecharImagemModal()" 
+    style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+  <img id="imagemModalSrc" src="" style="max-width:90%; max-height:90%; border-radius:8px;">
+</div>
+</section>
+
+
+                <section class="creature-section" id="Mula-sem-Cabeca">
+  <h2 class="creature-title">Mula sem Cabeça</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img 
+        src="img/mula.jpg" 
+        alt="Mula sem Cabeça" 
+        class="creature-image" 
+        onclick="abrirImagemModal(this.src)"
+      >
+      <p class="image-caption">Ilustração da Mula sem Cabeça</p>
+    </div>
+    <div class="text-area">
+      <h3>A Mula Sem Cabeça, o castigo dos pecados</h3>
+      <p>
+        A lenda da Mula Sem Cabeça é uma das mais marcantes e assustadoras do folclore brasileiro, especialmente popular nas regiões rurais. A história conta que uma mulher que cometeu o pecado de se relacionar com um padre é amaldiçoada e transformada em uma mula nas noites de quinta-feira para sexta-feira. A transformação ocorre em encruzilhadas ou caminhos ermos, e a mula galopa em alta velocidade, relinchando e soltando fogo pelo pescoço, onde deveria estar sua cabeça.
+      </p>
+      <p>
+        A Mula Sem Cabeça é descrita como um animal de cor escura, geralmente marrom, com cascos de aço ou ferro, que produzem um barulho infernal enquanto galopa. O fogo que sai do pescoço é o seu principal elemento de terror, iluminando a escuridão e assustando quem a vê. Ela persegue quem cruza seu caminho, mas geralmente não causa mal físico, apenas pânico e desorientação. A maldição só pode ser quebrada se alguém conseguir tirar o freio de sua boca.
+      </p>
+      <p>
+        A lenda tem um forte componente moralizante, alertando para os perigos do pecado e da transgressão religiosa. Ela é um símbolo do castigo divino e da culpa. A Mula Sem Cabeça representa a força indomável da natureza e o peso das ações humanas, sendo uma figura que evoca medo e respeito nas comunidades. A história é um dos mais vívidos exemplos de como o folclore serve para transmitir valores e ensinamentos através de narrativas impactantes.
+      </p>
+    </div>
+  </div>
+  <div id="imagemModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+  <span 
+    onclick="fecharImagemModal()" 
+    style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+  <img id="imagemModalSrc" src="" style="max-width:90%; max-height:90%; border-radius:8px;">
+</div>
+</section>
+
+
+
+                <section class="creature-section" id="Cabra-Cabriola">
+  <h2 class="creature-title">Cabra-Cabriola</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img src="img/cabra.jpg" alt="Cabra-Cabriola" class="creature-image" onclick="abrirImagemModal(this.src)">
+      <p class="image-caption">Ilustração da Cabra-Cabriola</p>
+    </div>
+    <div class="text-area">
+      <h3>Cabra-Cabriola: A Criatura das Sombras</h3>
+      <p>
+        A Cabra-Cabriola é uma criatura lendária do folclore brasileiro, especialmente conhecida nas regiões Nordeste e Sudeste. Com aparência monstruosa, ela tem corpo de cabra, olhos de fogo, chifres retorcidos, dentes afiados e um cheiro forte de enxofre. É dita como uma figura que surge à noite, em becos escuros ou encruzilhadas, à procura de crianças desobedientes.
+      </p>
+      <p>
+        Segundo a lenda, ela engole as crianças vivas ou as leva para o inferno, como castigo por seu mau comportamento. Algumas versões contam que sua respiração é tão quente que seca as plantas ao redor e queima o chão por onde passa. Seu corpo é coberto por pelos negros, e há quem diga que possui garras afiadas e até asas de morcego.
+      </p>
+      <p>
+        Muito usada por pais e avós para assustar os pequenos, a Cabra-Cabriola tem um papel educativo no imaginário popular, funcionando como uma advertência. A frase comum é:
+      </p>
+      <p><em>“Se você não se comportar, a Cabra-Cabriola vai te pegar!”</em></p>
+      <p>
+        A origem da criatura pode estar ligada a mitos ibéricos, influenciados por tradições africanas e indígenas, formando um símbolo do medo noturno. Em algumas versões, ela é vista como uma representação do mal absoluto, um tipo de diabo animalizado, vagando pelos caminhos escuros do interior.
+      </p>
+      <p>
+        A Cabra-Cabriola é mais do que uma lenda: é um reflexo das crenças, dos medos e da imaginação popular brasileira, que ainda hoje sussurra ao ouvido das crianças para que voltem para casa antes que escureça.
+      </p>
+    </div>
+  </div>
+  <div id="imagemModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+  <span 
+    onclick="fecharImagemModal()" 
+    style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+  <img id="imagemModalSrc" src="" style="max-width:90%; max-height:90%; border-radius:8px;">
+</div>
+</section>
+
+
+            <section class="creature-section" id="Chupa-Cabra">
+  <h2 class="creature-title">Chupa Cabra</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img 
+        src="img/cupa.jpg" 
+        alt="Chupa Cabra" 
+        class="creature-image" 
+        onclick="abrirImagemModal(this.src)"
+      >
+      <p class="image-caption">Ilustração do Chupa Cabra</p>
+    </div>
+    <div class="text-area">
+      <h3>Chupa Cabra, o mistério que aterroriza rebanhos</h3>
+      <p>
+        A lenda do Chupa Cabra é um fenômeno relativamente recente no folclore brasileiro, mas que rapidamente se espalhou e ganhou notoriedade a partir da década de 1990. A criatura é descrita como um ser misterioso que ataca animais, principalmente gado, cabras e aves, sugando seu sangue através de pequenas perfurações no pescoço, sem deixar outros sinais de violência. Os animais são encontrados mortos e completamente drenados de sangue.
+      </p>
+      <p>
+        As descrições do Chupa Cabra variam amplamente, mas as mais comuns o descrevem como um ser bípede, com olhos grandes e vermelhos, espinhos nas costas e garras afiadas. Algumas versões o associam a seres extraterrestres ou a experimentos genéticos falhos. Os ataques ocorrem geralmente durante a noite, em áreas rurais isoladas, o que dificulta a captura e identificação da criatura.
+      </p>
+      <p>
+        A lenda do Chupa Cabra gerou pânico em diversas comunidades rurais e foi amplamente divulgada pela mídia, alimentando o imaginário popular e as teorias da conspiração. Embora não haja provas científicas de sua existência, a história do Chupa Cabra se tornou parte do nosso folclore moderno, representando o medo do desconhecido e a busca por explicações para fenômenos inexplicáveis. Ele é um exemplo de como novas lendas podem surgir e se enraizar na cultura popular.
+      </p>
+      <p>© 2025 EMIT-LENDAS. Todos os direitos reservados.</p>
+    </div>
+  </div>
+  <div id="imagemModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+  <span 
+    onclick="fecharImagemModal()" 
+    style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+  <img id="imagemModalSrc" src="" style="max-width:90%; max-height:90%; border-radius:8px;">
+</div>
+</section>
+
+            <section class="creature-section" id="O-Corpo-Seco">
+  <h2 class="creature-title">O Corpo Seco</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img 
+        src="img/Corpo Seco.jpg" 
+        alt="O Corpo Seco" 
+        class="creature-image" 
+        onclick="abrirImagemModal(this.src)"
+      >
+      <p class="image-caption">Ilustração do Corpo Seco</p>
+    </div>
+    <div class="text-area">
+      <h3>Corpo Seco, o espectro da maldade humana</h3>
+      <p>
+        A lenda do Corpo Seco é uma das mais aterrorizantes e punitivas do folclore brasileiro, especialmente difundida nas regiões Centro-Oeste e Sudeste. A história narra o destino de uma pessoa que, em vida, foi tão cruel e má que nem a terra nem o inferno a aceitaram após a morte. Por seus pecados e sua maldade, ela foi rejeitada por todos os lugares e condenada a vagar como uma alma penada, com o corpo seco e em decomposição, assombrando estradas e caminhos.
+      </p>
+      <p>
+        O Corpo Seco é descrito como uma figura esquelética, com a pele ressecada e colada aos ossos, sem olhos e com um aspecto horripilante. Ele rasteja ou se arrasta pelos caminhos, emitindo gemidos e assustando viajantes. Alguns relatos afirmam que ele pode se agarrar às costas de quem cruza seu caminho, sugando a energia e causando doenças. A única forma de se livrar dele é através de orações ou exorcismos.
+      </p>
+      <p>
+        A lenda do Corpo Seco serve como um forte alerta moral, enfatizando as consequências das más ações e a importância de uma vida virtuosa. Ele é um lembrete de que a maldade extrema pode levar a um castigo eterno, mesmo após a morte. A figura do Corpo Seco representa o remorso e a punição divina, sendo um dos contos mais sombrios e impactantes do nosso folclore, transmitindo a ideia de que a maldade não tem descanso nem mesmo na sepultura.
+      </p>
+    </div>
+  </div>
+  <div id="imagemModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+  <span 
+    onclick="fecharImagemModal()" 
+    style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+  <img id="imagemModalSrc" src="" style="max-width:90%; max-height:90%; border-radius:8px;">
+</div>
+</section>
+
+
+<section class="creature-section" id="Caboclo d'água">
+  <h2 class="creature-title">Caboclo d'água</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img 
+        src="img/Caboclo d'água.jpg" 
+        alt="Caboclo d'água" 
+        class="creature-image" 
+        onclick="abrirImagemModal(this.src)"
+      >
+      <p class="image-caption">Ilustração do Caboclo d'água</p>
+    </div>
+    <div class="text-area">
+      <h3>O Caboclo D'água: O Guardião Misterioso do São Francisco</h3>
+      <p>
+        O Caboclo D'água: O Guardião Misterioso do São Francisco
+A lenda do Caboclo D'água é um pilar do folclore do Rio São Francisco, retratando um ser encantado que habita as profundezas do rio. Ele é frequentemente descrito como um homem musculoso de pele escura, com olhos grandes e brilhantes, e pés que se assemelham a nadadeiras, permitindo-lhe mover-se com agilidade na água.
+      </p>
+      <p>
+        Sua natureza é dual: pode ser um protetor benevolente, guiando pescadores e garantindo a fartura da pesca para aqueles que respeitam o rio, ou um travesso e justiceiro, virando canoas e roubando peixes de quem pratica a pesca predatória ou desrespeita as águas. Sua presença é muitas vezes anunciada por um som metálico vindo do fundo dos barcos.
+      </p>
+      <p>
+        Para aplacar sua fúria ou garantir sua proteção, os ribeirinhos oferecem-lhe presentes como fumo e cachaça. Mais do que um simples mito, a lenda do Caboclo D'água funciona como um código de conduta ambiental, incentivando o respeito pela natureza e a sustentabilidade, e personificando a força e o mistério do "Velho Chico".
+      </p>
+    </div>
+  </div>
+  <div id="imagemModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+  <span 
+    onclick="fecharImagemModal()" 
+    style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+  <img id="imagemModalSrc" src="" style="max-width:90%; max-height:90%; border-radius:8px;">
+</div>
+</section>
+
+ 
+            <!-- Add other Brazilian folklore creatures here, following the same structure -->
+
+        </div>
+
+     
+<div id="folclore-internacional" class="page">
+  <h1 class="page-main-title">Criaturas do Folclore Internacional</h1>
+
+  <section class="banner-profissional">
+    <div class="banner-content">
+      <div class="banner-texto">
+        <h1>Folclore Internacional</h1>
+        <p>Lendas que ultrapassam fronteiras. Conheça criaturas lendárias como o Vampiro, Oni, Dragão e muito mais!</p>
+        <a href="javascript:void(0)" class="botao-explorar" onclick="mostrarListaInternacional()">Explorar Agora</a>
+
+        <!-- Lista de criaturas oculta -->
+        <ul id="lista-criaturas-internacional" class="lista-criaturas" style="display: none;">
+          <li> Vampiro</a></li>
+          <li> Oni – O Demônio do Japão</a></li>
+          <li> Dragão</a></li>
+          <li> Fantasma</a></li>
+          <li>Banshee</a></li>
+          <li> Naga</a></li>
+          <li> Pé Grande</a></li>
+          <li> Thunderbird</a></li>
+          <li> Bunyip</a></li>
+          <li> Djinn</a></li>
+        </ul>
+      </div>
+
+      <div class="banner-imagem">
+        <img src="img/f internacional.png" alt="Personagens do folclore internacional" />
+      </div>
+    </div>
+  </section>
+<!-- Função JavaScript para mostrar lista -->
+<script>
+  function mostrarListaInternacional() {
+    const lista = document.getElementById('lista-criaturas-internacional');
+    lista.style.display = lista.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+
+
+            <section class="creature-section" id="vampiro" style="position: relative;">
+  <h2 class="creature-title">Vampiro</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <!-- Imagem -->
+      <img 
+        src="img/Vlad Dracula.jpg" alt="Drácula" class="creature-image" onclick="abrirModalVampiro(this.src)"
+      >
+      <p class="image-caption">Ilustração do Vampiro</p>
+
+      <!-- Modal exclusivo da seção -->
+      <div 
+        id="modalVampiro" 
+        style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:999;"
+      >
+        <span 
+          onclick="fecharModalVampiro()" 
+          style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+        <img 
+          id="modalImgVampiro" 
+          src="" 
+          style="max-width:90%; max-height:90%; border-radius:8px;">
+      </div>
+    </div>
+
+    <div class="text-area">
+      <h3>Vampiro (Leste Europeu)</h3>
+      <p>O vampiro é uma criatura lendária com origens no folclore do Leste Europeu, especialmente na Romênia, Hungria, Bulgária e Sérvia. Nessas tradições, ele era visto como um morto-vivo que saía do túmbulo para sugar o sangue dos vivos, principalmente de familiares.</p>
+      <p>Diferente da imagem moderna, o vampiro folclórico era grotesco: pele inchada, olhos brilhantes e cheiro de podridão. Acreditava-se que pessoas podiam se tornar vampiros se morressem de forma trágica, sem ritos adequados, ou por causas sobrenaturais.</p>
+      <p>Para impedir seu retorno, praticavam-se rituais como cravar estacas no coração, cortar a cabeça ou queimar o corpo. Esses medos foram tão intensos que geraram registros oficiais no século XVIII.</p>
+      <p>A fama do vampiro se espalhou pela Europa, e o escritor Bram Stoker eternizou essa criatura com o personagem Conde Drácula, inspirado nas lendas e em Vlad, o Empalador.</p>
+      <p>Mesmo com a transformação da imagem do vampiro ao longo do tempo, suas raízes estão no medo da morte, das doenças e do retorno dos mortos. Mas também tinham fraquezas: temiam a luz do sol, alho, cruzes, água benta e podiam ser destruídos com estacas de madeira.</p>
+      <p>Embora a imagem do vampiro tenha mudado muito ao longo dos séculos, sua origem está enraizada no medo da morte, das doenças e do desconhecido. A figura do vampiro representa, em essência, o terror ancestral de que os mortos possam voltar para assombrar os vivos.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function abrirModalVampiro(src) {
+    document.getElementById("modalVampiro").style.display = "flex";
+    document.getElementById("modalImgVampiro").src = src;
+  }
+
+  function fecharModalVampiro() {
+    document.getElementById("modalVampiro").style.display = "none";
+  }
+</script>
+
+            <section class="creature-section" id="oni" style="position: relative;">
+  <h2 class="creature-title">Oni – O Demônio do Japão (Japão)</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img 
+        src="img/oni.jpg" alt="Oni Japonês" class="creature-image" onclick="abrirModalOni(this.src)"
+      >
+      <p class="image-caption">Ilustração de um Oni</p>
+
+      <!-- Modal exclusivo da seção Oni -->
+      <div 
+        id="modalOni" 
+        style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:999;"
+      >
+        <span 
+          onclick="fecharModalOni()" 
+          style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+        <img 
+          id="modalImgOni" 
+          src="" 
+          style="max-width:90%; max-height:90%; border-radius:8px;">
+      </div>
+    </div>
+
+    <div class="text-area">
+      <h3>O Demônio do Japão</h3>
+      <p>Os Oni são figuras imponentes do folclore japonês, muitas vezes comparadas a ogros ou demônios. Eles possuem pele vermelha ou azul, olhos grandes, chifres na cabeça, garras afiadas e um porrete de ferro chamado kanabō. Vivem nos infernos budistas (Jigoku), onde torturam as almas pecadoras, mas também descem ao mundo humano para punir os malvados ou espalhar o caos.</p>
+      <p>A origem dos Oni mistura influências budistas, xintoístas e tradições populares. Eles representam tanto forças do mal quanto agentes do destino, capazes de castigar e proteger. Em algumas histórias, Oni arrependidos se tornam guardiões de templos ou aliados dos humanos.</p>
+      <p>No festival de Setsubun, os japoneses jogam grãos de soja para expulsar os Oni e atrair boa sorte, gritando “Oni wa soto! Fuku wa uchi!” (“Fora os demônios! Dentro a sorte!”).</p>
+      <p>Os Oni são temidos, mas fazem parte do equilíbrio espiritual japonês, onde até os monstros podem ter um papel positivo.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function abrirModalOni(src) {
+    document.getElementById("modalOni").style.display = "flex";
+    document.getElementById("modalImgOni").src = src;
+  }
+
+  function fecharModalOni() {
+    document.getElementById("modalOni").style.display = "none";
+  }
+</script>
+
+
+           <section class="creature-section" id="dragao" style="position: relative;">
+  <h2 class="creature-title">Dragão</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img src="img/dragao.jpg" alt="Dragão" class="creature-image" onclick="abrirModalDragao(this.src)"
+      >
+      <p class="image-caption">Ilustração do Dragão</p>
+
+      <!-- Modal exclusivo da seção Dragão -->
+      <div 
+        id="modalDragao" 
+        style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:999;"
+      >
+        <span 
+          onclick="fecharModalDragao()" 
+          style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+        <img 
+          id="modalImgDragao" 
+          src="" 
+          style="max-width:90%; max-height:90%; border-radius:8px;">
+      </div>
+    </div>
+
+    <div class="text-area">
+      <h3>A Serpente dos Céus e da Terra (Diversas Culturas)</h3>
+      <p>O dragão é uma das criaturas míticas mais difundidas do mundo, com diferentes formas e significados. Na Europa medieval, o dragão era símbolo do mal: uma criatura gigantesca, alada, com escamas, cauda poderosa e hálito de fogo. Guardava tesouros, sequestrava donzelas e era vencido por cavaleiros corajosos, como São Jorge. Ele representava o caos, o egoísmo e a prova final do herói.</p>
+      <p>Já na Ásia, especialmente na China, o dragão é um ser sagrado, sem asas, com corpo de serpente, chifres e barba longa. É símbolo de sabedoria, prosperidade, poder imperial e equilíbrio entre os elementos da natureza. É associado à água — rios, chuvas, mares — e à fertilidade. No Japão, dragões também aparecem como guardiões ou deuses.</p>
+      <p>Povos mesoamericanos, como os astecas e maias, cultuavam a serpente emplumada Quetzalcóatl, uma divindade associada ao vento, sabedoria e renovação.</p>
+      <p>Essas diferentes visões mostram como o dragão representa forças primordiais: destrutivas ou divinas, dependendo da cultura.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function abrirModalDragao(src) {
+    document.getElementById("modalDragao").style.display = "flex";
+    document.getElementById("modalImgDragao").src = src;
+  }
+
+  function fecharModalDragao() {
+    document.getElementById("modalDragao").style.display = "none";
+  }
+</script>
+
+            <section class="creature-section" id="fantasma" style="position: relative;">
+  <h2 class="creature-title">Fantasma</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img 
+        src="img/fantasma.jpg" 
+        alt="Fantasma" 
+        class="creature-image" 
+        onclick="abrirModalFantasma(this.src)"
+      >
+      <p class="image-caption">Ilustração de um Fantasma</p>
+
+      <!-- Modal exclusivo da seção Fantasma -->
+      <div 
+        id="modalFantasma" 
+        style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:999;"
+      >
+        <span 
+          onclick="fecharModalFantasma()" 
+          style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+        <img 
+          id="modalImgFantasma" 
+          src="" 
+          style="max-width:90%; max-height:90%; border-radius:8px;">
+      </div>
+    </div>
+
+    <div class="text-area">
+      <h3>A Alma que Não Descansa (Universal)</h3>
+      <p>Os fantasmas são talvez os seres sobrenaturais mais universais. Encontrados em todas as culturas, são considerados manifestações da alma de alguém que morreu, mas que não conseguiu ou não quis partir para o além. As razões variam: morte violenta, desejo de vingança, apego emocional ou pendências não resolvidas. Podem aparecer como sombras, vultos, vozes, luzes misteriosas ou figuras humanas translúcidas.</p>
+      <p>Na tradição ocidental, os fantasmas costumam assombrar casas antigas, cemitérios, castelos e locais onde ocorreu alguma tragédia. Já no Japão, os fantasmas femininos (yūrei) são muito presentes e aparecem com longos cabelos negros e roupas brancas, geralmente representando sentimentos extremos como raiva, amor ou dor. Em muitas culturas, os fantasmas não são necessariamente malignos: alguns querem apenas ser ouvidos ou lembrados.</p>
+      <p>O medo dos fantasmas revela a dificuldade humana de lidar com a morte e com aquilo que permanece além da vida.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function abrirModalFantasma(src) {
+    document.getElementById("modalFantasma").style.display = "flex";
+    document.getElementById("modalImgFantasma").src = src;
+  }
+
+  function fecharModalFantasma() {
+    document.getElementById("modalFantasma").style.display = "none";
+  }
+</script>
+
+
+            <section class="creature-section" id="banshee" style="position: relative;">
+  <h2 class="creature-title">Banshee</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img 
+        src="img/Banshee.png" 
+        alt="Banshee" 
+        class="creature-image" 
+        onclick="abrirModalBanshee(this.src)"
+      >
+      <p class="image-caption">Ilustração do Banshee</p>
+
+      <div 
+        id="modalBanshee" 
+        style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:999;"
+      >
+        <span 
+          onclick="fecharModalBanshee()" 
+          style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+        <img 
+          id="modalImgBanshee" 
+          src="" 
+          style="max-width:90%; max-height:90%; border-radius:8px;">
+      </div>
+    </div>
+    <div class="text-area">
+      <h3>Mensageira da Morte (Irlanda)</h3>
+      <p>A Banshee é uma figura misteriosa e melancólica do folclore irlandês. Ela é um espírito feminino que surge para anunciar a morte de um membro de uma família tradicional irlandesa. Sua presença é percebida através de um choro ou lamento conhecido como “keening” — um grito agudo que causa arrepios. Acredita-se que a Banshee não mata, apenas avisa, sendo assim mais um presságio do que uma ameaça.</p>
+      <p>Descrita como uma mulher de aparência etérea, com longos cabelos desgrenhados e roupas brancas ou cinzentas, a Banshee pode aparecer ao entardecer, à beira de rios ou em colinas silenciosas. Seu nome vem do gaélico bean sídhe, que significa “mulher do povo das fadas” ou “espírito feminino do outro mundo”. Em algumas histórias, ela é vista penteando os cabelos com um pequeno pente prateado. Embora cause medo, seu lamento também é um ato de luto e respeito. Ela representa o limiar entre a vida e a morte, a dor da despedida e a força do sobrenatural.</p>
+    </div>
+  </div>
+</section>
+
+<section class="creature-section" id="naga" style="position: relative;">
+  <h2 class="creature-title">Naga</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img 
+        src="img/Naga.jpg" 
+        alt="Naga" 
+        class="creature-image" 
+        onclick="abrirModalNaga(this.src)"
+      >
+      <p class="image-caption">Ilustração de um Naga</p>
+
+      <div 
+        id="modalNaga" 
+        style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:999;"
+      >
+        <span 
+          onclick="fecharModalNaga()" 
+          style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+        <img 
+          id="modalImgNaga" 
+          src="" 
+          style="max-width:90%; max-height:90%; border-radius:8px;">
+      </div>
+    </div>
+    <div class="text-area">
+      <h3>A Serpente Sagrada (Índia e Sudeste Asiático)</h3>
+      <p>As Nagas são entidades míticas em forma de serpente ou metade humana, metade cobra, presentes no hinduísmo, budismo e nas tradições locais do Sudeste Asiático. Consideradas seres de grande poder, as Nagas vivem em reinos subterrâneos sob os rios e lagos, protegendo tesouros, templos e segredos ancestrais. Em algumas histórias, podem assumir forma humana e interagir com os mortais, casando-se com reis ou sábios.</p>
+      <p>Na Índia, as Nagas são associadas à fertilidade, à água e ao renascimento. São protetoras de templos sagrados e muitas vezes têm um papel positivo. No budismo, aparecem como protetores de Buda — uma Naga chamada Mucalinda teria protegido Siddhartha da chuva após sua iluminação. Em países como Tailândia e Camboja, as Nagas são reverenciadas em festivais e esculturas, adornando portões e escadarias.</p>
+      <p>Elas representam o ciclo da vida, a força espiritual e o elo entre o mundo terreno e o espiritual.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function abrirModalBanshee(src) {
+    document.getElementById("modalBanshee").style.display = "flex";
+    document.getElementById("modalImgBanshee").src = src;
+  }
+
+  function fecharModalBanshee() {
+    document.getElementById("modalBanshee").style.display = "none";
+  }
+
+  function abrirModalNaga(src) {
+    document.getElementById("modalNaga").style.display = "flex";
+    document.getElementById("modalImgNaga").src = src;
+  }
+
+  function fecharModalNaga() {
+    document.getElementById("modalNaga").style.display = "none";
+  }
+</script>
+
+<section class="creature-section" id="pegrande" style="position: relative;">
+  <h2 class="creature-title">Pé Grande</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img src="img/pe.jpg" alt="Pé Grande" class="creature-image" onclick="abrirModalPe(this.src)">
+      <p class="image-caption">Ilustração do Pé Grande</p>
+      <div id="modalPe" style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:999;">
+        <span onclick="fecharModalPe()" style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+        <img id="modalImgPe" src="" style="max-width:90%; max-height:90%; border-radius:8px;">
+      </div>
+    </div>
+    <div class="text-area">
+      <h3>O Gigante das Florestas (EUA/Canadá)</h3>
+      <p>O Pé Grande, ou Bigfoot, é uma criatura lendária que habitaria as florestas densas e regiões montanhosas da América do Norte. Descrito como um hominídeo de 2 a 3 metros de altura, coberto de pelos escuros, com pegadas enormes e comportamento tímido, ele é tema de muitos relatos e lendas desde o século XIX. Centenas de pessoas afirmam ter visto o Pé Grande, mas nenhuma prova definitiva foi obtida, o que só aumenta o mistério.
+
+Antes da fama moderna, povos indígenas como os Salish e os Cherokee já falavam de seres semelhantes — guardiões das florestas ou espíritos protetores. A figura do Pé Grande passou a representar a conexão com a natureza selvagem, o desconhecido e o desejo humano de encontrar algo além do comum. Ele é símbolo da criptozoologia, ciência que estuda animais lendários, e desperta debates entre céticos e entusiastas.</p>
+    </div>
+  </div>
+</section>
+
+            <section class="creature-section" id="thunderbird" style="position: relative;">
+  <h2 class="creature-title">Thunderbird</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img src="img/Thunderbird.jpg" alt="Thunderbird" class="creature-image" onclick="abrirModalThunderbird(this.src)">
+      <p class="image-caption">Ilustração de um Thunderbird</p>
+      <div id="modalThunderbird" style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:999;">
+        <span onclick="fecharModalThunderbird()" style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+        <img id="modalImgThunderbird" src="" style="max-width:90%; max-height:90%; border-radius:8px;">
+      </div>
+    </div>
+    <div class="text-area">
+      <h3>O Pássaro dos Trovões (Povos Indígenas da América do Norte)</h3>
+      <p>O Thunderbird, ou “Pássaro Trovão”, é uma figura sagrada e mitológica entre muitos povos indígenas da América do Norte, como os Lakota, os Ojibwe e os Kwakwaka’wakw. Trata-se de uma ave gigantesca, com asas tão poderosas que, ao bater, causam trovões. Seus olhos brilham como relâmpagos e dizem que ela pode carregar baleias em suas garras.
+
+Mais do que uma criatura monstruosa, o Thunderbird é um ser espiritual, que representa os céus, as tempestades, o poder natural e a justiça. Ele aparece em mitos como um guardião dos humanos ou como um juiz divino que combate serpentes gigantes, símbolos do mal e do caos. Em algumas culturas, ele vive no topo das montanhas ou em nuvens sagradas.
+
+O Thunderbird simboliza o poder imensurável da natureza e a conexão entre o mundo físico e o espiritual. Suas imagens aparecem em totens, esculturas e histórias orais como lembrança da força dos deuses e do equilíbrio entre céu e terra.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+ 
+  function abrirModalPe(src) {
+    document.getElementById("modalPe").style.display = "flex";
+    document.getElementById("modalImgPe").src = src;
+  }
+  function fecharModalPe() {
+    document.getElementById("modalPe").style.display = "none";
+  }
+  function abrirModalThunderbird(src) {
+    document.getElementById("modalThunderbird").style.display = "flex";
+    document.getElementById("modalImgThunderbird").src = src;
+  }
+  function fecharModalThunderbird() {
+    document.getElementById("modalThunderbird").style.display = "none";
+  }
+</script>
+
+                   <section class="creature-section" id="bunyip" style="position: relative;">
+  <h2 class="creature-title">Bunyip</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img 
+        src="img/Bunyip.jpg" 
+        alt="Bunyip" 
+        class="creature-image" 
+        onclick="abrirModalBunyip(this.src)"
+      >
+      <p class="image-caption">Ilustração de um Bunyip</p>
+      <div 
+        id="modalBunyip" 
+        style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:999;">
+        <span 
+          onclick="fecharModalBunyip()" 
+          style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+        <img 
+          id="modalImgBunyip" 
+          src="" 
+          style="max-width:90%; max-height:90%; border-radius:8px;">
+      </div>
+    </div>
+    <div class="text-area">
+      <h3>O Monstro do Pântano (Austrália)</h3>
+      <p>O Bunyip é uma criatura mítica da mitologia aborígene australiana. Vive em lagos, rios e pântanos, sendo descrito de várias formas: às vezes como um animal peludo, outras como um monstro aquático com presas e olhos brilhantes.</p>
+      <p>Ele caça à noite, especialmente pessoas que se aproximam da água sozinhas. Para os povos nativos, ele representa o respeito pelos ambientes naturais perigosos e o poder espiritual da terra. O Bunyip é uma criatura assustadora, mas também um guardião do sagrado.</p>
+    </div>
+  </div>
+</section>
+
+<section class="creature-section" id="djinn" style="position: relative;">
+  <h2 class="creature-title">Djinn</h2>
+  <div class="content-wrapper">
+    <div class="image-area">
+      <img 
+        src="img/Djinn.webp" 
+        alt="Djinn" 
+        class="creature-image" 
+        onclick="abrirModalDjinn(this.src)"
+      >
+      <p class="image-caption">Ilustração de um Djinn</p>
+      <div 
+        id="modalDjinn" 
+        style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:999;">
+        <span 
+          onclick="fecharModalDjinn()" 
+          style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+        <img 
+          id="modalImgDjinn" 
+          src="" 
+          style="max-width:90%; max-height:90%; border-radius:8px;">
+      </div>
+    </div>
+    <div class="text-area">
+      <h3>Os Espíritos do Vento e Fogo (Oriente Médio e Norte da África)</h3>
+      <p>Os Djinn (ou gênios) são seres espirituais presentes na cultura islâmica e árabe. São feitos de fogo sem fumaça e vivem num mundo paralelo ao dos humanos. Diferente de anjos ou demônios, os Djinn têm livre-arbítrio: podem ser bons, maus ou neutros.</p>
+      <p>Eles são invisíveis, mas podem assumir forma humana ou animal. Muitos contos falam de Djinn aprisionados em lâmpadas ou objetos mágicos, podendo realizar desejos — mas quase sempre com consequências inesperadas.</p>
+      <p>Na cultura tradicional, também são culpados por possessões, doenças e azares, sendo temidos e respeitados.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+ 
+  function abrirModalBunyip(src) {
+    document.getElementById("modalBunyip").style.display = "flex";
+    document.getElementById("modalImgBunyip").src = src;
+  }
+
+  function fecharModalBunyip() {
+    document.getElementById("modalBunyip").style.display = "none";
+  }
+
+  function abrirModalDjinn(src) {
+    document.getElementById("modalDjinn").style.display = "flex";
+    document.getElementById("modalImgDjinn").src = src;
+  }
+
+  function fecharModalDjinn() {
+    document.getElementById("modalDjinn").style.display = "none";
+  }
+</script>
+
+           
+
+
+            
+            <!-- Add other international folklore creatures here -->
+
+        </div>
+        
+        <!-- PAGE 3: LENDAS URBANAS -->
+                <!-- PAGE 3: LENDAS URBANAS -->
+<div id="lendas-urbanas" class="page">
+  <h1 class="page-main-title">Lendas Urbanas</h1>
+
+  <section class="banner-profissional">
+    <div class="banner-content">
+      <div class="banner-texto">
+        <h1>Lendas Urbanas</h1>
+        <p>Lendas assustadoras que ganharam fama nas cidades. Descubra figuras como a Loira do Banheiro, Homem do Saco e mais.</p>
+        <a href="javascript:void(0)" class="botao-explorar" onclick="mostrarListaUrbanas()">Explorar Agora</a>
+
+        <!-- Lista de lendas urbanas oculta -->
+        <ul id="lista-lendas-urbanas" class="lista-criaturas" style="display: none;">
+          <li>🚽 Loira do Banheiro</a></li>
+          <li>🧥 Homem do Saco</a></li>
+          <li>🪆 Boneca Assombrada</a></li>
+          <li>🚘 Carro Preto</a></li>
+          <li>🧛 Chupacabra Urbano</a></li>
+        </ul>
+      </div>
+
+      <div class="banner-imagem">
+        <img src="img/lendas.png" alt="Lendas Urbanas" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Função JavaScript específica para esta página -->
+  <script>
+    function mostrarListaUrbanas() {
+      const lista = document.getElementById('lista-lendas-urbanas');
+      lista.style.display = lista.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+
+
+            <section class="creature-section" id="loira-do-banheiro">
+                <h2 class="creature-title">Loira do Banheiro</h2>
+                <div class="content-wrapper">
+                    <div class="image-area">
+                        <img src="https://placehold.co/400x300/1a2a3a/ffffff?text=Loira+do+Banheiro" alt="Loira do Banheiro" class="creature-image">
+                        <p class="image-caption">A assombração dos banheiros escolares</p>
+                    </div>
+                    <div class="text-area">
+                        <h3>O Espectro Escolar</h3>
+                        <p>A Loira do Banheiro é uma das lendas urbanas mais populares nas escolas brasileiras. A história narra o fantasma de uma jovem loira que aparece em banheiros escolares quando invocada, geralmente através de rituais como dar descarga três vezes ou chamar seu nome. Ela assEla assusta estudantes e é frequentemente associada a atos de travessura.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="creature-section" id="homem-do-saco">
+                <h2 class="creature-title">Homem do Saco</h2>
+                <div class="content-wrapper">
+                    <div class="image-area">
+                        <img src="https://placehold.co/400x300/1a2a3a/ffffff?text=Homem+do+Saco" alt="Homem do Saco" class="creature-image">
+                        <p class="image-caption">O terror das crianças desobedientes</p>
+                    </div>
+                    <div class="text-area">
+                        <h3>O Conto de Advertência</h3>
+                        <p>O Homem do Saco é uma lenda urbana brasileira, usada para assustar crianças desobedientes. Ele é descrito como uma figura misteriosa que carrega um saco e rapta crianças que se comportam mal ou andam sozinhas na rua. É uma figura que evoca o medo do desconhecido e serve como um conto de advertência.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="creature-section" id="loira-do-banheiro">
+                <h2 class="creature-title">Loira do Banheiro</h2>
+                <div class="content-wrapper">
+                    <div class="image-area">
+                        <img src="https://placehold.co/400x300/1a2a3a/ffffff?text=Loira+do+Banheiro" alt="Loira do Banheiro" class="creature-image">
+                        <p class="image-caption">A assombração dos banheiros escolares</p>
+                    </div>
+                    <div class="text-area">
+                        <h3>O Espectro Escolar</h3>
+                        <p>A Loira do Banheiro é uma das lendas urbanas mais populares nas escolas brasileiras. A história narra o fantasma de uma jovem loira que aparece em banheiros escolares quando invocada, geralmente através de rituais como dar descarga três vezes ou chamar seu nome. Ela assEla assusta estudantes e é frequentemente associada a atos de travessura.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="creature-section" id="homem-do-saco">
+                <h2 class="creature-title">Homem do Saco</h2>
+                <div class="content-wrapper">
+                    <div class="image-area">
+                        <img src="https://placehold.co/400x300/1a2a3a/ffffff?text=Homem+do+Saco" alt="Homem do Saco" class="creature-image">
+                        <p class="image-caption">O terror das crianças desobedientes</p>
+                    </div>
+                    <div class="text-area">
+                        <h3>O Conto de Advertência</h3>
+                        <p>O Homem do Saco é uma lenda urbana brasileira, usada para assustar crianças desobedientes. Ele é descrito como uma figura misteriosa que carrega um saco e rapta crianças que se comportam mal ou andam sozinhas na rua. É uma figura que evoca o medo do desconhecido e serve como um conto de advertência.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="creature-section" id="loira-do-banheiro">
+                <h2 class="creature-title">Loira do Banheiro</h2>
+                <div class="content-wrapper">
+                    <div class="image-area">
+                        <img src="https://placehold.co/400x300/1a2a3a/ffffff?text=Loira+do+Banheiro" alt="Loira do Banheiro" class="creature-image">
+                        <p class="image-caption">A assombração dos banheiros escolares</p>
+                    </div>
+                    <div class="text-area">
+                        <h3>O Espectro Escolar</h3>
+                        <p>A Loira do Banheiro é uma das lendas urbanas mais populares nas escolas brasileiras. A história narra o fantasma de uma jovem loira que aparece em banheiros escolares quando invocada, geralmente através de rituais como dar descarga três vezes ou chamar seu nome. Ela assEla assusta estudantes e é frequentemente associada a atos de travessura.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="creature-section" id="homem-do-saco">
+                <h2 class="creature-title">Homem do Saco</h2>
+                <div class="content-wrapper">
+                    <div class="image-area">
+                        <img src="https://placehold.co/400x300/1a2a3a/ffffff?text=Homem+do+Saco" alt="Homem do Saco" class="creature-image">
+                        <p class="image-caption">O terror das crianças desobedientes</p>
+                    </div>
+                    <div class="text-area">
+                        <h3>O Conto de Advertência</h3>
+                        <p>O Homem do Saco é uma lenda urbana brasileira, usada para assustar crianças desobedientes. Ele é descrito como uma figura misteriosa que carrega um saco e rapta crianças que se comportam mal ou andam sozinhas na rua. É uma figura que evoca o medo do desconhecido e serve como um conto de advertência.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="creature-section" id="loira-do-banheiro">
+                <h2 class="creature-title">Loira do Banheiro</h2>
+                <div class="content-wrapper">
+                    <div class="image-area">
+                        <img src="https://placehold.co/400x300/1a2a3a/ffffff?text=Loira+do+Banheiro" alt="Loira do Banheiro" class="creature-image">
+                        <p class="image-caption">A assombração dos banheiros escolares</p>
+                    </div>
+                    <div class="text-area">
+                        <h3>O Espectro Escolar</h3>
+                        <p>A Loira do Banheiro é uma das lendas urbanas mais populares nas escolas brasileiras. A história narra o fantasma de uma jovem loira que aparece em banheiros escolares quando invocada, geralmente através de rituais como dar descarga três vezes ou chamar seu nome. Ela assEla assusta estudantes e é frequentemente associada a atos de travessura.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="creature-section" id="homem-do-saco">
+                <h2 class="creature-title">Homem do Saco</h2>
+                <div class="content-wrapper">
+                    <div class="image-area">
+                        <img src="https://placehold.co/400x300/1a2a3a/ffffff?text=Homem+do+Saco" alt="Homem do Saco" class="creature-image">
+                        <p class="image-caption">O terror das crianças desobedientes</p>
+                    </div>
+                    <div class="text-area">
+                        <h3>O Conto de Advertência</h3>
+                        <p>O Homem do Saco é uma lenda urbana brasileira, usada para assustar crianças desobedientes. Ele é descrito como uma figura misteriosa que carrega um saco e rapta crianças que se comportam mal ou andam sozinhas na rua. É uma figura que evoca o medo do desconhecido e serve como um conto de advertência.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="creature-section" id="loira-do-banheiro">
+                <h2 class="creature-title">Loira do Banheiro</h2>
+                <div class="content-wrapper">
+                    <div class="image-area">
+                        <img src="https://placehold.co/400x300/1a2a3a/ffffff?text=Loira+do+Banheiro" alt="Loira do Banheiro" class="creature-image">
+                        <p class="image-caption">A assombração dos banheiros escolares</p>
+                    </div>
+                    <div class="text-area">
+                        <h3>O Espectro Escolar</h3>
+                        <p>A Loira do Banheiro é uma das lendas urbanas mais populares nas escolas brasileiras. A história narra o fantasma de uma jovem loira que aparece em banheiros escolares quando invocada, geralmente através de rituais como dar descarga três vezes ou chamar seu nome. Ela assEla assusta estudantes e é frequentemente associada a atos de travessura.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="creature-section" id="homem-do-saco">
+                <h2 class="creature-title">Homem do Saco</h2>
+                <div class="content-wrapper">
+                    <div class="image-area">
+                        <img src="https://placehold.co/400x300/1a2a3a/ffffff?text=Homem+do+Saco" alt="Homem do Saco" class="creature-image">
+                        <p class="image-caption">O terror das crianças desobedientes</p>
+                    </div>
+                    <div class="text-area">
+                        <h3>O Conto de Advertência</h3>
+                        <p>O Homem do Saco é uma lenda urbana brasileira, usada para assustar crianças desobedientes. Ele é descrito como uma figura misteriosa que carrega um saco e rapta crianças que se comportam mal ou andam sozinhas na rua. É uma figura que evoca o medo do desconhecido e serve como um conto de advertência.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Add other urban legends here -->
+            
+        </div>
+        
+        <!-- PAGE 4: CONTATO (VOZ DO POVO) -->
+<div id="contato" class="page">
+    <h1 class="page-main-title">Voz do Povo</h1>
+
+    <section class="form-section">
+        <div class="form-container card">
+            <h2 class="form-title">Envie sua História</h2>
+
+            <form id="whatsapp-form" class="voice-form">
+                <div class="form-group">
+                    <label for="nome">Seu nome <span>*</span></label>
+                    <input type="text" id="nome" name="Nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Seu e-mail (opcional)</label>
+                    <input type="email" id="email" name="Email" placeholder="seu-email@exemplo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="regiao">De qual região do Brasil você é?</label>
+                    <input type="text" id="regiao" name="Região" placeholder="Ex: Sudeste, Norte, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="historia">Sua história <span>*</span></label>
+                    <textarea id="historia" name="História" rows="8" placeholder="Digite sua lenda ou história aqui..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button btn btn-primary">Enviar via WhatsApp</button>
+            </form>
+
+            <div class="form-instructions card mt-40">
+                <h3>📩 Funcionamento do Envio das Histórias</h3>
+                <p>
+                    Ao clicar em "Enviar via WhatsApp", a mensagem será automaticamente montada com suas informações e você será redirecionado ao WhatsApp para finalizar o envio.
+                </p>
+                <p>
+                    Para garantir que sua história seja aceita e publicada, atente-se a:
+                </p>
+                <ul>
+                    <li>✅ Preencher seu nome ou apelido;</li>
+                    <li>✅ Escrever sua história com clareza;</li>
+                    <li>✅ Informar sua região (opcional);</li>
+                    <li>✅ Você pode optar por não se identificar.</li>
+                </ul>
+                <p>Sua contribuição fortalece a preservação da cultura popular!</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("whatsapp-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const nome = document.getElementById("nome").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const regiao = document.getElementById("regiao").value.trim();
+            const historia = document.getElementById("historia").value.trim();
+
+            const numero = "5531995460028"; // Coloque seu número de WhatsApp aqui com DDI e DDD
+
+            let mensagem = `👤 *Nome:* ${nome}\n`;
+            if (email !== "") mensagem += `📧 *Email:* ${email}\n`;
+            if (regiao !== "") mensagem += `🌍 *Região:* ${regiao}\n`;
+            mensagem += `📖 *História:*\n${historia}`;
+
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+            window.open(url, "_blank");
+        });
+    </script>
+
+    <!-- Aqui segue sua seção "Histórias do Povo" normalmente -->
+    <h1 class="page-main-title" style="margin-top: 80px;">Histórias do Povo</h1>
+
+    <section class="creature-section story-section">
+        <div class="story-header">
+            <h2 class="person-name">João Silva</h2>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="image-area story-image-area">
+                <img src="https://placehold.co/400x300/1a2a3a/ffffff?text=História+1" alt="Imagem ilustrativa da história" class="creature-image">
+            </div>
+
+            <div class="text-area story-text-area">
+                <h3>O Brilho na Estrada de Terra</h3>
+                <p>Esta é a primeira história enviada pelo povo. Aqui você pode colar o texto que receber no seu WhatsApp. Esta seção pode ser atualizada manualmente ou conectada a um sistema.</p>
+                <p class="story-region"><strong>Região:</strong> Nordeste</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top-links">
+            <a href="#folclore-internacional" class="footer-link-button nav-link">Folclore Internacional</a>
+            <a href="#lendas-urbanas" class="footer-link-button nav-link">Lendas Urbanas</a>
+            <a href="#contato" class="footer-link-button nav-link">Voz do Povo</a>
+            <a href="#folclore-brasileiro" class="footer-link-button nav-link">Voltar ao Início</a>
+        </div>
+
+        <div class="social-media-links">
+            <a href="https://www.instagram.com/_pedro_phgf" target="_blank" aria-label="Instagram">
+                <svg viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+                <span>Instagram</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5531995460028" target="_blank" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.55C8.75 21.33 10.37 21.8 12.04 21.8H12.05C17.5 21.8 21.95 17.35 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.05 20.15H12.04C10.56 20.15 9.12 19.74 7.89 19L7.4 18.75L4.41 19.58L5.25 16.68L5 16.17C4.21 14.86 3.8 13.41 3.8 11.91C3.8 7.37 7.49 3.67 12.05 3.67M10.13 6.9L8.73 7.21C8.43 7.27 8.16 7.43 7.97 7.67C7.78 7.9 7.64 8.18 7.6 8.5C7.57 8.81 7.68 9.14 7.92 9.5C8.16 9.85 8.53 10.39 9.01 10.91C9.93 11.91 10.94 12.75 12.05 13.43L12.63 13.75C12.92 13.91 13.22 14 13.53 14C13.78 14 14.02 13.94 14.24 13.82C14.68 13.58 15 13.23 15.13 12.75L15.33 12.17C15.39 12.03 15.41 11.89 15.41 11.75C15.41 11.61 15.38 11.47 15.31 11.34L14.71 10.26C14.58 10.02 14.36 9.85 14.1 9.79L12.91 9.47C12.66 9.41 12.39 9.47 12.18 9.64L11.53 10.19C11.46 10.26 11.38 10.3 11.28 10.3C11.19 10.3 11.1 10.27 11.02 10.21C10.79 10.05 10.32 9.82 9.73 9.23C9.02 8.53 8.53 7.82 8.44 7.64C8.36 7.47 8.4 7.32 8.49 7.22L9.03 6.64C9.21 6.45 9.26 6.18 9.2 5.92L8.93 4.73C8.84 4.38 8.56 4.14 8.22 4.05L7.22 3.82L10.13 6.9Z" /></svg>
+                <span>WhatsApp</span>
+            </a>
+            <a href="https://www.tiktok.com/@mundo_cinema_812" target="_blank" aria-label="TikTok">
+                <svg viewBox="0 0 24 24"><path d="M12.53,2C10.2,2 8.2,3.95 8.2,6.3V11.5C8.2,13.75 10.2,15.7 12.53,15.7C14.85,15.7 16.85,13.75 16.85,11.5V6.3C16.85,3.95 14.85,2 12.53,2M12.53,14C11.1,14 9.9,12.85 9.9,11.5V6.3C9.9,4.95 11.1,3.7 12.53,3.7C13.95,3.7 15.15,4.95 15.15,6.3V11.5C15.15,12.85 13.95,14 12.53,14M19.3,10.4V12.1C18.1,12.7 17.2,13.75 16.8,14.9H15.1V10.6C15.1,9.3 14,8.2 12.6,8.2C11.2,8.2 10.1,9.3 10.1,10.6V16.6C10.1,19.1 12.1,21.1 14.6,21.1C16.9,21.1 18.9,19.3 19.2,17H17.4C17.2,18.3 16,19.4 14.6,19.4C13.1,19.4 11.8,18.1 11.8,16.6V10.5C11.8,10.05 12.15,9.7 12.6,9.7C13.05,9.7 13.4,10.05 13.4,10.5V15.2H16.8V16.6C17.5,18.5 19.3,20 21.4,20C22.2,20 23,19.3 23,18.5V13.4C23,11.7 21.4,10.4 19.3,10.4Z" /></svg>
+                <span>TikTok</span>
+            </a>
+        </div>
+
+        <p class="footer-credits">© 2025 EMIT-LANDAS | Criado por PEDRO HENRIQUE GONÇALVES FERREIRA (PHGF) |</p>
+    </footer>
+
+
+
+
+
+    <style>
+        /* CSS RESET AND BASE STYLES */
+        :root {
+          --dark-bg: #01460a;
+          --section-bg: #012907;
+          --accent-color: #be7200;
+          --text-light: #f0f4f8;
+          --text-muted: #be7200;
+          --border-subtle: #01460a;
+          --header-footer-bg: #023b0c;
+          --box-shadow-color: rgba(0, 0, 0, 0.4);
+          --accent-hover: #006120;
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+ .banner-profissional {
+  width: 100%;
+  padding:  0%;
+  background: linear-gradient(to right, #b8c7ba, #5f7e64);
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+
+.banner-imagem {
+  flex: 1 1 100px;
+  text-align: center;
+}
+
+.banner-imagem img {
+  max-width: 80%;
+  height: auto;
+}
+
+
+.lista-criaturas {
+  display: none; /* escondida por padrão */
+  list-style: none;
+  padding: 20px;
+  background-color: #a8beab;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lista-criaturas li {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #001f0a;
+  font-weight: 500;
+}
+
+
+
+.banner-texto {
+  flex: 6 6 400px;
+}
+
+.banner-texto h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 42px;
+  color: #3c184e;
+  margin-bottom: 20px;
+}
+
+.banner-texto p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.botao-explorar {
+  background-color: #3c184e;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botao-explorar:hover {
+  background-color: #2a1035;
+}
+
+.banner-imagem {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.banner-imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Modal escuro e centralizado */
+.creature-section {
+  margin: 80px auto;
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  transition: all 0.3s ease;
+}
+
+.creature-title {
+  font-size: 2.5rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.image-area {
+  flex: 1 1 350px;
+  text-align: center;
+}
+
+.creature-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  cursor: zoom-in;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.creature-image:hover {
+  transform: scale(1.03);
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.text-area {
+  flex: 1 1 500px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Modal de imagem */
+.modal-imagem {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.modal-conteudo {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+.fechar {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+
+
+
+
+
+        body {
+          font-family: 'Roboto', sans-serif;
+          background-color: var(--dark-bg);
+          color: var(--text-light);
+          line-height: 1.7;
+          scroll-behavior: smooth;
+        }
+
+        /* HEADER AND NAVIGATION */
+        .header {
+          background-color: var(--header-footer-bg);
+          padding: 1rem 2rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 3px solid var(--accent-color);
+          box-shadow: 0 4px 12px var(--box-shadow-color);
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+
+        .site-title-link {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: var(--text-light);
+        }
+
+        .site-logo {
+          height: 80px;
+          margin-right: 100px;
+          border-radius: 50%;
+          border: 2px solid var(--accent-color);
+          box-shadow: 0 0 10px rgba(110, 208, 230, 0.5);
+        }
+
+        .site-name {
+          font-family: 'Merriweather', serif;
+          font-size: 1.8em;
+          font-weight: 7;
+          color: var(--accent-color);
+          text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .nav-menu ul {
+          list-style: none;
+          display: flex;
+          gap: 2rem;
+        }
+
+        .nav-menu ul li a {
+          color: var(--text-light);
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 1.1em;
+          padding: 8px 12px;
+          border-radius: 50px;
+          transition: all 0.3s ease;
+          position: relative;
+        }
+
+        .nav-menu ul li a::after {
+          content: '';
+          position: absolute;
+          width: 10;
+          height: 2px;
+          background-color: var(--accent-color);
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: width 0.3s ease;
+        }
+
+        .nav-menu ul li a:hover::after, .nav-menu ul li a.active::after {
+          width: 100%;
+        }
+
+        .nav-menu ul li a:hover, .nav-menu ul li a.active {
+          color: var(--accent-color);
+          background-color: rgba(43, 62, 80, 0.7);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1100;
+        }
+
+        .mobile-menu-toggle .bar {
+            width: 30px;
+            height: 3px;
+            background-color: var(--text-light);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+        
+        /* PAGE CONTAINER AND PAGE STYLES */
+        main {
+            padding: 2rem 1rem;
+        }
+
+        .page {
+            display: none; /* Pages are hidden by default */
+        }
+        
+        .page.active {
+            display: block; /* The active page is shown */
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .page-main-title {
+          font-family: 'Merriweather', serif;
+          font-size: clamp(2.5rem, 6vw, 3.5rem);
+          color: var(--accent-color);
+          text-align: center;
+          margin: 40px 0;
+          text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+          border-bottom: 2px solid var(--accent-color);
+          padding-bottom: 20px;
+        }
+
+        /* CONTENT SECTIONS */
+        .creature-section {
+          background-color: var(--section-bg);
+          border-radius: 12px;
+          padding: clamp(1.5rem, 4vw, 2.5rem);
+          margin-bottom: 4rem;
+          box-shadow: 0 8px 25px var(--box-shadow-color);
+          border: 1px solid var(--border-subtle);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .creature-section:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .creature-title {
+          font-family: 'Merriweather', serif;
+          font-size: clamp(1.8rem, 5vw, 2.5rem);
+          color: var(--accent-color);
+          text-align: center;
+          margin-bottom: 35px;
+          padding-bottom: 15px;
+          border-bottom: 2px solid var(--border-subtle);
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .content-wrapper {
+          display: flex;
+          gap: 3rem;
+          align-items: flex-start;
+        }
+
+        .image-area {
+          flex: 1;
+          max-width: 400px;
+          background-color: rgba(0, 0, 0, 0.15);
+          border: 1px solid var(--border-subtle);
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+          text-align: center;
+        }
+
+        .creature-image {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 8px;
+          border: 2px solid var(--accent-color);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+          margin-bottom: 15px;
+          transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .creature-image:hover {
+          transform: scale(1.05);
+        }
+
+        .image-caption {
+          font-size: 0.9em;
+          color: var(--text-muted);
+          font-style: italic;
+        }
+
+        .text-area {
+          flex: 2;
+        }
+
+        .text-area h3 {
+          font-family: 'Merriweather', serif;
+          font-size: 1.6em;
+          color: var(--accent-color);
+          margin-bottom: 20px;
+          border-bottom: 1px dashed var(--border-subtle);
+          padding-bottom: 10px;
+        }
+
+        .text-area p {
+          font-size: 1.1em;
+          color: var(--text-light);
+          text-align: justify;
+        }
+
+        /* FORM STYLES */
+        .form-section {
+            display: flex;
+            justify-content: center;
+        }
+        .form-container {
+            background-color: var(--section-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 700px;
+            border: 1px solid var(--border-subtle);
+            box-shadow: 0 8px 25px var(--box-shadow-color);
+        }
+        .form-container h2 {
+            font-family: 'Merriweather', serif;
+            text-align: center;
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        .voice-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .voice-form label {
+            font-weight: bold;
+            color: var(--text-muted);
+        }
+        .voice-form input, .voice-form textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-subtle);
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .voice-form input:focus, .voice-form textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+        }
+        .submit-button {
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--header-footer-bg);
+            background-color: var(--accent-color);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .submit-button:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+        .form-instructions {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: rgba(0,0,0,0.2);
+            border-radius: 6px;
+            border-left: 4px solid var(--accent-color);
+            font-size: 0.9em;
+            color: var(--text-muted);
+        }
+        .form-instructions a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .form-instructions a:hover {
+            text-decoration: underline;
+        }
+        
+        /* STORY SECTION (VOZ DO POVO) */
+        .story-section .story-header .person-name {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8em;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        .story-section .text-area .story-region {
+            margin-top: 1.5rem;
+            font-style: italic;
+            color: var(--text-muted);
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        .footer {
+          background-color: var(--header-footer-bg);
+          color: var(--text-light);
+          padding: 2.5rem 2rem;
+          text-align: center;
+          border-top: 3px solid var(--accent-color);
+          box-shadow: 0 -4px 12px var(--box-shadow-color);
+          margin-top: 50px;
+        }
+
+        .footer-top-links {
+          display: flex;
+          justify-content: center;
+          gap: 1.5rem;
+          margin-bottom: 2rem;
+          flex-wrap: wrap;
+        }
+
+        .footer-link-button {
+          background-color: var(--section-bg);
+          color: var(--accent-color);
+          padding: 10px 20px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 0.95em;
+          transition: all 0.3s ease;
+          border: 1px solid var(--border-subtle);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer-link-button:hover {
+          background-color: var(--accent-color);
+          color: var(--header-footer-bg);
+          transform: translateY(-3px);
+          box-shadow: 0 4px 10px rgba(110, 208, 230, 0.4);
+        }
+
+        .social-media-links {
+          margin-bottom: 2rem;
+          display: flex;
+          justify-content: center;
+          gap: 2.5rem;
+          flex-wrap: wrap;
+        }
+
+        .social-media-links a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: var(--text-light);
+          font-size: 1.1em;
+          transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .social-media-links a:hover {
+          color: var(--accent-color);
+          transform: scale(1.1);
+        }
+
+        .social-media-links svg {
+          height: 30px;
+          width: 30px;
+          margin-right: 10px;
+          fill: currentColor;
+        }
+        
+        .footer-credits {
+          font-size: 0.9em;
+          color: var(--text-muted);
+          margin-top: 2rem;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 992px) {
+            .header {
+                padding: 1rem;
+            }
+            .content-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-area {
+                max-width: 100%;
+                width: 100%;
+            }
+            .text-area {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .site-name {
+                font-size: 1.5em;
+            }
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background-color: var(--header-footer-bg);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: right 0.4s ease-in-out;
+                box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+            }
+            .nav-menu.active {
+                right: 0;
+            }
+            .nav-menu ul {
+                flex-direction: column;
+                gap: 2rem;
+                text-align: center;
+            }
+            .nav-menu ul li a {
+                font-size: 1.5em;
+            }
+            .mobile-menu-toggle {
+                display: flex;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <script>
+  function mostrarLista() {
+    const lista = document.getElementById("lista-criaturas");
+    if (lista.style.display === "none" || lista.style.display === "") {
+      lista.style.display = "block";
+    } else {
+      lista.style.display = "none";
+    }
+  }
+</script>
+
+
+<script>
+  function abrirImagemModal(src) {
+    const modal = document.getElementById("imagemModal");
+    const img = document.getElementById("imagemModalSrc");
+    modal.style.display = "flex";
+    img.src = src;
+  }
+
+  function fecharImagemModal() {
+    document.getElementById("imagemModal").style.display = "none";
+  }
+</script>
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pages = document.querySelectorAll('.page');
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            // --- SINGLE PAGE NAVIGATION LOGIC ---
+            function showPage(pageId) {
+                // Hide all pages
+                pages.forEach(page => {
+                    page.classList.remove('active');
+                });
+
+                // Show the target page
+                const targetPage = document.querySelector(pageId);
+                if (targetPage) {
+                    targetPage.classList.add('active');
+                    window.scrollTo(0, 0); // Scroll to top on page change
+                }
+
+                // Update active state for nav links
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === pageId) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+       
+
+
+            // Initial page load based on hash or default
+            const initialHash = window.location.hash || '#folclore-brasileiro';
+            showPage(initialHash);
+
+            // Handle navigation clicks
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    
+                    // Update URL hash without jumping
+                    if(history.pushState) {
+                        history.pushState(null, null, targetId);
+                    } else {
+                        window.location.hash = targetId;
+                    }
+
+                    showPage(targetId);
+                    
+                    // Close mobile menu on link click
+                    if (navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                    }
+                });
+            });
+
+            // Handle browser back/forward buttons
+            window.addEventListener('popstate', function() {
+                const hash = window.location.hash || '#folclore-brasileiro';
+                showPage(hash);
+            });
+
+            // --- MOBILE MENU LOGIC ---
+            mobileMenuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
